@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Local intermediate files (but KEEP the snapshot data in data/raw/)
+*.parquet
+book_history_*.json
+_progress.ndjson
+_index.json
+_probe_results.json
+# don't commit ad-hoc local ndjson at repo root
+/*.ndjson
+
+# macOS / editor cruft
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets — never commit
+.env
+.envrc
+*.key
+
+# Backup files (from sed -i fallback)
+*.bak
+*.bak2
+*.bak3
