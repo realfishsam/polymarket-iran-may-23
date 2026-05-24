@@ -112,6 +112,8 @@ Each row = one resting price level in one snapshot. Multiple rows share a `snaps
 
 ### 1. Pull fresh data with PMXT (4 lines of Python)
 
+We use PMXT — it's a unified, venue-agnostic SDK for prediction markets (think CCXT, but for Polymarket, Kalshi, Limitless, and others). One client covers both data and trading, and the free tier gives us everything we need. PMXT is language agnostic by design, so you can reproduce this with python, typescript, or and http client.
+
 ```python
 from pmxt import Polymarket
 
